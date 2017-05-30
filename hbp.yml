@@ -1,0 +1,82 @@
+name: docker-create-databases
+description: "Create databases in a Postgres server"
+
+long_description: |
+  Create databases in a Postgres server. Useful for testing with docker-compose.
+
+authors:
+  - author: Ludovic Claude
+    author_email:
+      - ludovic.claude@chuv.ch
+      - ludovic.claude54@gmail.com
+      - ludovic.claude54@googlemail.com
+    organisation: LREN-CHUV
+    organisation_badge: https://img.shields.io/badge/CHUV-LREN-AF4C64.svg
+
+platform: MIP
+component:
+  mip_building_block: infrastructure
+  nature: docker-image
+
+license:
+  name: Apache 2.0
+  badge: https://img.shields.io/badge/license-Apache--2.0-blue.svg
+  url: https://github.com/LREN-CHUV/DOCKER-create-databases/blob/master/LICENSE
+
+code_repositories:
+  - name: chuv-gitlab
+    visibility: private
+    url: https://___.chuv.ch/mip-infra/docker-create-databases/
+    git_clone: https://___.chuv.ch/mip-infra/docker-create-databases.git
+  - name: github/LREN-CHUV
+    visibility: public
+    url: https://github.io/LREN-CHUV/docker-create-databases/
+    git_clone: https://github.io/LREN-CHUV/docker-create-databases.git
+  - name: github/HBPMedical
+    visibility: public
+    url: https://github.io/HBPMedical/docker-create-databases/
+    git_clone: https://github.io/HBPMedical/docker-create-databases.git
+
+code_quality_checks:
+  codacy:
+    badge: https://api.codacy.com/project/badge/Grade/TODO
+    url: "https://www.codacy.com/app/hbp-mip/docker-create-databases?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LREN-CHUV/docker-create-databases&amp;utm_campaign=Badge_Grade"
+
+testing:
+  unit_testing:
+    - sources: /tests
+    - command: /tests/tesh.sh
+
+release_management:
+  current_version: 0.0.1
+  current_code_release: https://github.com/HBPMedical/docker-create-databases/archive/0.0.1.zip
+  current_docker_release: docker pull hbpmip/create-databases:0.0.1
+  release_script: 'publish.sh'
+
+continuous_integration:
+  - name: CircleCI
+    description: "Check style and execute unit tests"
+    url: https://circleci.com/gh/LREN-CHUV/docker-create-databases
+    badge: https://circleci.com/gh/LREN-CHUV/docker-create-databases.svg?style=svg
+    actions:
+      - code_style
+      - unit_tests
+
+distribution:
+  docker_hub:
+    name: hbpmip/create-databases
+    current_tag: 0.0.1
+    url: https://hub.docker.com/r/hbpmip/create-databases/
+    badge: https://img.shields.io/badge/docker-hbpmip%2Fcreate-databases-008bb8.svg
+    command: docker pull hbpmip/create-databases:0.0.1
+
+planning:
+  github:
+    name: Issues on Github
+    url: https://github.com/LREN-CHUV/docker-create-databases/issues
+
+related_projects:
+  - name: woken
+    mip_building_block: algorithm-factory
+    relationship: other-depends-on
+    relationship_scope: test
