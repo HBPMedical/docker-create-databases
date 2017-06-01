@@ -39,7 +39,7 @@ code_repositories:
 
 code_quality_checks:
   codacy:
-    badge: https://api.codacy.com/project/badge/Grade/TODO
+    badge: https://api.codacy.com/project/badge/Grade/14600d91ae4244e3b8ce1d659be66e52
     url: "https://www.codacy.com/app/hbp-mip/docker-create-databases?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LREN-CHUV/docker-create-databases&amp;utm_campaign=Badge_Grade"
 
 testing:
