@@ -5,5 +5,3 @@ create_databases:
     - echo "Preparing create-databases"
   post:
     - echo "Finished building create-databases"
-  test:
-    - ./tests/test.sh
