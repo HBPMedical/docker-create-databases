@@ -45,9 +45,9 @@ code_quality_checks:
 testing: {}
 
 release_management:
-  current_version: 0.0.1
-  current_code_release: https://github.com/HBPMedical/docker-create-databases/archive/0.0.1.zip
-  current_docker_release: docker pull hbpmip/create-databases:0.0.1
+  current_version: 1.0.0
+  current_code_release: https://github.com/HBPMedical/docker-create-databases/archive/1.0.0.zip
+  current_docker_release: docker pull hbpmip/create-databases:1.0.0
   release_script: 'publish.sh'
 
 continuous_integration:
@@ -62,10 +62,10 @@ continuous_integration:
 distribution:
   docker_hub:
     name: hbpmip/create-databases
-    current_tag: 0.0.1
+    current_tag: 1.0.0
     url: https://hub.docker.com/r/hbpmip/create-databases/
     badge: https://img.shields.io/badge/docker-hbpmip%2Fcreate-databases-008bb8.svg
-    command: docker pull hbpmip/create-databases:0.0.1
+    command: docker pull hbpmip/create-databases:1.0.0
 
 planning:
   github:

@@ -13,14 +13,14 @@ This docker image is available as an automated build on [the docker registry hub
 
 
 ```console
-$ docker run hbpmip/create-databases:0.0.1
+$ docker run hbpmip/create-databases:1.0.0
 ```
 
 ## Usage
 
 Run:
 ```console
-$ docker run -i -t --rm -e DB_HOST=`hostname` -v `pwd`/sql:/create-databases/sql hbpmip/create-databases:0.0.1
+$ docker run -i -t --rm -e DB_HOST=`hostname` -v `pwd`/sql:/create-databases/sql hbpmip/create-databases:1.0.0
 ```
 
 where the environment variables are:
