@@ -1,14 +1,14 @@
 ---
 
 - hosts: localhost
-  setup: no
+  gather_facts: no
 
   tasks:
 
     - name: Create the new database(s)"
       postgresql_db:
         name: "{{ item.db }}"
-        port: "{{ db_port | default(5432) }}"
+        port: "{{ db_port | default('5432') }}"
         login_host: "{{ db_host }}"
         login_user: "{{ db_admin_user }}"
         login_password: "{{ db_admin_password }}"
@@ -20,7 +20,7 @@
         login_host: "{{ db_host }}"
         login_user: "{{ db_admin_user }}"
         login_password: "{{ db_admin_password }}"
-        port: "{{ db_port | default(5432) }}"
+        port: "{{ db_port | default('5432') }}"
         db: "{{ item.db }}"
         name: "{{ item.user }}"
         password: "{{ item.password }}"
