@@ -57,7 +57,6 @@ continuous_integration:
     badge: https://circleci.com/gh/LREN-CHUV/docker-create-databases.svg?style=svg
     actions:
       - code_style
-      - unit_tests
 
 distribution:
   docker_hub:
