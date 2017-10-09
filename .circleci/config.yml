@@ -5,11 +5,12 @@ jobs:
   build:
     working_directory: ~/src
     docker:
-      - image: tmaier/docker-compose:17.03
+      - image: hbpmip/docker-compose-for-ci:17.06-0
     environment:
        - CIRCLECI: true
     steps:
-      - setup_remote_docker
+      - setup_remote_docker:
+          version: 17.06.0-ce
       - checkout
       - run: |
           apk add --no-cache bash build-base git py-pip python python-dev curl
