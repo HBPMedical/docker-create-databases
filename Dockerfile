@@ -1,6 +1,4 @@
-FROM ju2wheels/ansible:2.x-alpine-3.5
-
-MAINTAINER ludovic.claude54@googlemail.com
+FROM willhallonline/ansible:2.7-alpine-3.9
 
 RUN apk add --update --no-cache py-psycopg2
 
