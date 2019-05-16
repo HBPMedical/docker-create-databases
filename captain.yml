@@ -1,7 +1,0 @@
-create_databases:
-  build: Dockerfile
-  image: hbpmip/create-databases
-  pre:
-    - echo "Preparing create-databases"
-  post:
-    - echo "Finished building create-databases"
