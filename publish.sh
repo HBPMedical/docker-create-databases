@@ -38,7 +38,7 @@ else
   DOCKER="sudo docker"
 fi
 
-tests=1
+tests=0
 for param in "$@"
 do
   if [ "--no-tests" == "$param" ]; then
@@ -65,9 +65,6 @@ fi
 select_part() {
   local choice=$1
   case "$choice" in
-      "Package release")
-          bumpversion package
-          ;;
       "Patch release")
           bumpversion patch
           ;;
@@ -93,7 +90,7 @@ git pull --tags
   echo
   echo 'What do you want to release?'
   PS3='Select the version increment> '
-  options=("Package release" "Patch release" "Minor release" "Major release" "Release with a custom version")
+  options=("Patch release" "Minor release" "Major release" "Release with a custom version")
   select choice in "${options[@]}";
   do
     select_part "$choice"
