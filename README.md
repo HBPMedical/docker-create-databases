@@ -63,19 +63,6 @@ limitations under the License.
 
 Initial packaging done by suin <suinyeze@gmail.com>
 
-### create-databases
-
-Copyright (C) 2016-2017 [Boxfuse GmbH](https://boxfuse.com)
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-http://www.apache.org/licenses/LICENSE-2.0
-
-## Trademark
-create-databases is a registered trademark of [Boxfuse GmbH](https://boxfuse.com).
-
 # Acknowledgements
 
 This work has been funded by the European Union Seventh Framework Program (FP7/2007­2013) under grant agreement no. 604102 (HBP)
